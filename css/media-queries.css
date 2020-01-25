@@ -1,0 +1,93 @@
+@media only screen and (max-width: 767px) {
+
+
+    header{
+        position: relative;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .logo{
+        max-width: 130px;
+        float: none;
+        margin-left: 10px;
+        position: relative;
+        top: 12px;
+    }
+    .btn{
+        float: none;
+        width: 45%;
+        margin-left: 0;
+        margin-bottom: auto;
+    }
+    .bg-image{
+        position: relative;
+        top: 210px;
+    }
+    .btn.grey{
+        margin-top: -3px;
+        margin-bottom: 2px;
+    }
+    .btn{
+        margin-right: 20px;
+    }
+    .container{
+        position: relative;
+    }
+    section div h1{
+        position: absolute;
+        bottom: -35px;
+    }
+    h1:after{
+        margin-top: 16px;
+    }
+    header div form{
+        position: absolute;
+        top: 81px;
+        left: 50px;
+        width: 37%;
+    }
+    header div nav ul{
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    header div nav ul li{
+        margin-right: 30px;
+    }
+    header div a:first-of-type{
+        margin-right: 10px;
+    }
+    #email{
+        width: 40%;
+        margin-left: 55px;
+    }
+    footer div form button{
+        width: 40%;
+    }
+    .logo2{
+        display: inline-block;
+    }
+    footer ul {
+        float: left;
+        margin-top: 20px;
+    }
+    footer ul:after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .ul_terms{
+        margin-left: 0px;
+    }
+    .ul_ebooks{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .ul_our-trainers{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .ul_vip{
+        margin-left: 0px;
+        margin-right: none;
+    }
+}

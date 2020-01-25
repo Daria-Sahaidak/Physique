@@ -1,0 +1,288 @@
+@font-face { /*вся эта часть берётся из текстового файла, который скачивается вместе со шрифтом*/
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebas/BebasNeueRegular.eot');
+    src: url('../fonts/bebas/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebas/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/bebas/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/bebas/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 25px 0px 12px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.container.border{
+    border-bottom: solid 1px #464646;
+    padding-bottom: 21px;
+    margin-bottom: 21px;
+}
+header .logo{
+    display: inline-block;
+    max-width: 351px;
+}
+header .logo .img{
+    width: 100%;
+}
+header form{
+    background-color: #ebebeb;
+    width: 208px;
+    height: 42px;
+    display: inline-block;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+header form input{
+    width: 70%;
+    border: none;
+    background: transparent;
+    line-height: 42px;
+    display: inline-block;
+    vertical-align: top;
+    color: #959595;
+    font-size: 15px;
+    padding-left: 16px;
+    box-sizing: border-box;
+
+}
+header form button{
+    display: inline-block;
+    width: 27%;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    vertical-align: top;
+}
+header .btn {
+    min-width: 169px; /*чтобы могла расширяться*/
+    line-height: 42px; /*текст посередине относительно высоты*/
+    border-radius: 3px;
+    background-color: #252525;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 24px;
+    float: right;
+    margin-top: 9px;
+    font-family: "Metropolis";
+}
+header .btn.grey{
+    background-color: #464646;
+}
+header .btn.red{
+    background-color: #fa090a;
+}
+.fa-shopping-cart, .fa-user{
+    font-size: 18px;
+    color: white;
+    margin-right: 13px;
+}
+.fa-search{
+    color: red;
+}
+
+header .btn.red:before{
+
+}
+.container:after, header nav ul li:after{  /*Нужно обнулять после каждого логического float; чтобы не создавать лишний класс, можно расписать через псевдоэлемент*/
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav ul{
+    list-style-type: none;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+}
+header nav ul li{
+    float: left;
+    margin-right: 16px;
+    border-bottom: solid 4px transparent;
+}
+header nav ul li:hover a, header nav ul li.active a{ /*чтобы появлялось при наведении нижнее красное подчеркивание*/
+    border-bottom: solid 4px #ff0000;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 8px;
+}
+.soc_icon{
+    float: right;
+    margin-left: 16px;
+}
+.fa-user{
+    margin-right: 14px;
+}
+
+section{
+    position: relative;
+}
+.bg-image{
+    position: relative;
+    /*max-width: 1219px;
+    margin: auto;*/
+    margin-bottom: 400px;
+}
+.bg-image img{
+    width: 100%;
+    display: block;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    width: 100%;
+    position: absolute;
+    top: 222px;
+    padding-bottom: 32px;
+    margin: auto;
+    left: 0;
+}
+h1:after{
+    content: "";
+    width: 100%;
+    max-width: 1170px;
+    height: 3px;
+    display: block;
+    background-color: #ff0000;
+    margin: auto;
+    margin-top: 34px;
+}
+footer{
+    background-color: #010006;
+    padding-top: 62px;
+    padding-bottom: 63px;
+}
+.wrapper{
+    max-width: 899px;
+    margin: auto;
+}
+.dark_part_text{
+    font-size: 18px;
+    color: white;
+    font-family: Metropolis;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+#email{
+    margin-top: 40px;
+    padding-left: 26px;
+    width: 390px;
+    line-height: 42px;
+    box-sizing: border-box;
+    font-family: Metropolis;
+    margin-right: 32px;
+    margin-left: 87px;
+    border-radius: 3px;
+    color: #959595;
+    border: 0;
+}
+
+footer button{
+    width: 310px;
+    background-color: #ff0000;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: Metropolis;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 51px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.light_part{
+    background-color: #252525;
+    padding: 61px 56px 63px 25px;
+    border: 1px solid #464647;
+}
+footer div img{
+    max-width: 247px;
+    display: block;
+    margin-bottom: 44px;
+}
+footer a img{
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    margin-right: 24px;
+}
+footer ul{
+    list-style: none;
+    color: white;
+    font-family: Metropolis;
+    font-size: 13px;
+    display: inline-block;
+    float: right;
+    margin-top: -76px;
+}
+footer ul:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+footer ul li{
+    margin-bottom: 24px;
+}
+footer ul li:last-of-type{
+    margin: 0;
+}
+footer ul:last-of-type{
+    margin-right: 87px;
+}
+.ul_ebooks{
+    margin-right: 70px;
+    margin-left: 60px;
+}
+footer ul:first-of-type{
+
+    margin-right: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
